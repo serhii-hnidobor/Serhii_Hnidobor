@@ -1,0 +1,14 @@
+{
+  "name": "tasks",
+  "private": true,
+  "engines": {
+    "node": ">=16 <17",
+    "npm": ">=8 <9"
+  },
+  "scripts": {
+    "lint:js": "npx eslint \"src/**/*.{ts,tsx}\" --resolve-plugins-relative-to . --max-warnings=0",
+    "lint": "npm run lint:js",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
