@@ -13,9 +13,9 @@ describe('Test 1', () => {
     expect((0, _task.task1)([1, 2, 'aasf', '1', '123', 123])).toEqual([1, 2, 123]);
   });
   it('should pass random test', () => {
-    const TEST_NUM = 10000;
+    const TEST_NUM = 350;
     for (let i = 0; i < TEST_NUM; i++) {
-      const n = (0, _crypto.randomInt)(2, 10000);
+      const n = (0, _crypto.randomInt)(2, 1000);
       const requestedArray = [];
       const testArray = new Array(n).fill(null).map(() => {
         const isNum = randomBool();
