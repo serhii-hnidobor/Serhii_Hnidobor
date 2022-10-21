@@ -1,4 +1,4 @@
-name: Deploy to heroku.
+name: CI
 
 on:
   push:
@@ -7,8 +7,9 @@ on:
 jobs:
   lint-test:
     runs-on: ubuntu-latest
-    name: Build and test
+    name: Lint and test
     steps:
+      - uses: actions/checkout@v2
       - run: npm install
       - run: npm run lint
       - run: npm run test
