@@ -1,0 +1,20 @@
+import { formatStringList } from '~/helpers/helpers';
+export const meeting = (listStr) => {
+    const getSortFunc = (isByFirstName) => {
+        return (friendCredentialPrev, friendCredentialCur) => {
+            const [firstNamePrevFriend, lastNamePrevFriend] = friendCredentialPrev.split(':');
+            const [firstNameCurFriend, lastNameCurFriend] = friendCredentialCur.split(':');
+            console.log(firstNamePrevFriend, lastNamePrevFriend, '---', firstNameCurFriend, lastNameCurFriend);
+            if (!isByFirstName) {
+                return lastNamePrevFriend.charCodeAt(0) - lastNameCurFriend.charCodeAt(0);
+            }
+            else if (lastNamePrevFriend[0] === lastNameCurFriend[0]) {
+                return firstNamePrevFriend.charCodeAt(0) - firstNameCurFriend.charCodeAt(0);
+            }
+            return 0;
+        };
+    };
+    const listArray = listStr.toUpperCase().split(';');
+    const computedList = listArray.sort(getSortFunc(false)).sort(getSortFunc(true));
+    return formatStringList(computedList);
+};

@@ -5,11 +5,12 @@
     "tasks",
     "shared"
   ],
-  "name": "dragon",
+  "name": "task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "query-string": "^7.1.1",
+    "random-bool": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.4",
@@ -20,7 +21,8 @@
     "lint:fs": "ls-lint",
     "lint:css": "npm run lint:css --workspaces --if-present",
     "lint:js": "npm run lint:js --workspaces --if-present",
-    "lint": "npm run lint:fs && npm run lint --workspaces --if-present"
+    "lint": "npm run lint:fs && npm run lint --workspaces --if-present",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -50,8 +52,11 @@
     "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.8",
+    "fakerator": "^0.3.6",
+    "jest": "^29.2.1",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1",
+    "random-int": "^3.0.0",
     "simple-git-hooks": "^2.8.0",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
@@ -59,6 +64,7 @@
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.1.0",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.3"
   },
   "simple-git-hooks": {

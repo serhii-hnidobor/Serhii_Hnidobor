@@ -1,0 +1,14 @@
+name: Deploy to heroku.
+
+on:
+  push:
+    branches: [1_tasks]
+
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+    name: Build and test
+    steps:
+      - run: npm install
+      - run: npm run lint
+      - run: npm run test
