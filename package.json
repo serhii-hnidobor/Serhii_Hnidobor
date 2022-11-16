@@ -34,6 +34,7 @@
     "tasks/**/*.{ts,tsx}": "npm run lint:js"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^8.8.0",
     "@ls-lint/ls-lint": "^1.11.2",
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
