@@ -2,7 +2,7 @@
   "name": "tasks",
   "private": true,
   "engines": {
-    "node": ">=16 <17",
+    "node": ">=16 <=19.1",
     "npm": ">=8 <9"
   },
   "scripts": {
