@@ -8,8 +8,7 @@
       "~/*": ["./src/*"]
     },
     "outDir": "build",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "commonjs",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   }
