@@ -1,11 +1,6 @@
----------------------------REQUIREMENTS--------------------------------
+## HOW TO RUN
 
-1) installed chrome webdriver
-2) screen size >= 1500px 
-
--------------------------HOW TO RUN------------------------------------
-
-1) go to root of project 
-2) use  'npm run test -w tasks' command 
+1. Create .env file at the .env folder according to .env.example
+2. From project root run `npm install` and `npm run start`
 
 
